@@ -11,6 +11,20 @@ module.exports = {
     extend: {
       colors: {
         pinkTest: '#FFC0CB',
+        btnColor: '#EBECF1',
+        btnBorderColor: '#4E4E4E',
+        btnFromColor: '#EBECF1',
+        btnViaColor: '#C0C4CE',
+        btnToColor: '#A9AEBB'
+      },
+      borderRadius: {
+        radius: '40px'
+      },
+      width: {
+        width: '402px',
+      },
+      height:{
+        height: '142px'
       }
     },
   },

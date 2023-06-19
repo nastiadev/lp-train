@@ -563,8 +563,16 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
+.h-height {
+  height: 142px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.w-width {
+  width: 402px;
 }
 
 .items-center {
@@ -581,36 +589,53 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-radius {
+  border-radius: 40px;
 }
 
-.bg-slate-50 {
+.border {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-btnBorderColor {
+  --tw-border-opacity: 1;
+  border-color: rgb(78 78 78 / var(--tw-border-opacity));
+}
+
+.bg-btnColor {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  background-color: rgb(235 236 241 / var(--tw-bg-opacity));
 }
 
-.bg-teal-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 250 / var(--tw-bg-opacity));
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+.from-btnFromColor {
+  --tw-gradient-from: #EBECF1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(235 236 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.bg-teal-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 246 228 / var(--tw-bg-opacity));
+.via-btnViaColor {
+  --tw-gradient-to: rgb(192 196 206 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #C0C4CE var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.p-6 {
-  padding: 1.5rem;
+.to-btnToColor {
+  --tw-gradient-to: #A9AEBB var(--tw-gradient-to-position);
 }
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -622,18 +647,12 @@ video {
   padding-top: 0.5rem;
 }
 
-.text-white {
+.text-btnBorderColor {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(78 78 78 / var(--tw-text-opacity));
 }
 
 .hover\:text-teal-500:hover {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
 }
