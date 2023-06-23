@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="h-full box-border p-0 m-0">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/feather-icons/dist/feather.js"></script>
     <link rel="stylesheet" href="./output.css">
     <link rel="icon" href="../assets/zametka_logokey.svg">
-</head>
-<body>
-    <nav class="relative container mx-auto p-6">
+  </head>
+  <body class="h-full box-border p-0 m-0">
+    <div class="min-h-full flex flex-col">
+    <header class="grow-0 shrink-0">
+      <nav class="relative container mx-auto p-6">
         <div class="flex items-center justify-between">
-            <div class="pt-2">
-                <img src="../assets/Logologo.png" width="100" alt="logo">
-            </div>
-            <div class="flex space-x-6">
-              <a href="#" class="hover:text-teal-500">about</a>
-              <a href="#" class="hover:text-teal-500">social</a>
-              <a href="#" class="hover:text-teal-500">showcases</a>
-            </div>
+          <div class="pt-2">
+            <img src="../assets/Logologo.png" width="100" alt="logo">
           </div>
-          <div class="flex item-center">
-            
-            <button id="button" href="" class="p-3 px-6 pt-2"><div class="top-blick"></div>
-              <span class="button-body">Кнопка</span>
-            <div class="bottom-blick"></div>
-            </button>
+          <div class="flex space-x-6">
+            <a href="#" class="hover:text-teal-500">about</a>
+            <a href="#" class="hover:text-teal-500">social</a>
+            <a href="#" class="hover:text-teal-500">showcases</a>
           </div>
-    </nav>
+        </div>
+      </nav>
+    </header>
+    <main class="grow">
+      <div class="mx-auto p-6"> 
+        <button id="button" href="" class="p-3 px-6 pt-2"><div class="top-blick"></div>
+          <span class="button-body">Кнопка</span>
+          <div class="bottom-blick"></div>
+        </button>
+      </div>
+    </main>
+    <footer class="flex items-center justify-center space-x-6 mx-auto p-6 grow-0 shrink-0">
+      <a href="http://github.com/zametka"><i data-feather="github" class="text-textColor hover:text-teal-500"></i></a>
+      <a href="http://twitter.com/zametkahq"><i data-feather="twitter" class="text-textColor hover:text-teal-500"></i></a>
+      <a href="mailto:hello@zametka.com"><i data-feather="mail" class="text-textColor hover:text-teal-500"></i></a>
+    </footer>
+    </div>
+    <script>
+    feather.replace()
+  </script>
 </body>
 </html>
